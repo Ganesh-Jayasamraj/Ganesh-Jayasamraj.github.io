@@ -1,0 +1,21 @@
+#navbarSupportedContent ul{
+    text-align: center;
+}
+
+body{
+    /* background-image: url(./Assets/3523311_back.jpg); */
+    background-image: url(https://img.freepik.com/premium-vector/blue-white-circles-seamless-repeat-pattern-background_654662-4604.jpg?w=2000);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    
+}
+
+.jumbotron{
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/242/236/855/mountains-river-snow-forest-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
