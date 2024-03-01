@@ -14,12 +14,15 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <title>Greetings</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon">
+
+    <title>Greetings From Ganesh</title>
   </head>
   <body>
-    <i class="fa-regular fa-1x fa-sun bg-primary" style="position: fixed; z-index: 1000; right: 50px; bottom: 50px; padding: 9px; color: yellow; border-radius: 50%;"></i>
+    <!-- <i class="fa-regular fa-1x fa-sun bg-primary" style="position: fixed; z-index: 1000; right: 50px; bottom: 50px; padding: 9px; color: yellow; border-radius: 50%;"></i> -->
     <!-- Navigation Section -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary container" style="background-color: #e3f2fd;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info container" style="background-color: #e3f2fd;">
         <div class="container">
             <a class="navbar-brand display-4" href="#">Ganesh</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
@@ -27,11 +30,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="text-align: center;">
                 <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="#about-me">About Me</a>
-                    <a class="nav-item nav-link" href="#">My Skills</a>
-                    <a class="nav-item nav-link" href="#">Works</a>
-                    <a class="nav-item nav-link" href="#">Contact Me</a>
+                    <a class="nav-item nav-link" href="#skills">My Skills</a>
+                    <a class="nav-item nav-link" href="#work">Works</a>
+                    <a class="nav-item nav-link" href="#contact">Contact Me</a>
                 </div>
             </div>
         </div>
@@ -42,30 +45,153 @@
         <div class="" style="text-align: center;">
             <h1 style="font-weight: 200; font-size: 48px;">Greetings</h1>
             <p class="mx-4" style="font-weight: 300; font-size: large;">I'm Ganesh, A Recent graduate in CSE and looking for opportunities to learn and show my skills.</p>
-            <button class="btn btn-primary" onclick="resume()">My Resume</button>
-        </div>
-    </div>
-
-    <div class="container" style="background: #000000cc; color: white; padding: 30px;">
-        <!-- About Me -->
-        <div id="about-me">
-            <p class="display-4">Hi I'm Ganesh</p>
-            <p class="text-justify">I'm a Computer Science and Engineering graduate looking for a job, having interest in computers and electronics field, As I have interest in computers, I learnt basics of several languages such as Python, JavaScript, and for Front-end development with HTML, CSS and also used Bootstrap 4, TailwindCSS too.</p>
-            <p class="text-justify">I also learned AWS and DevOps tools and done some work with these technologies, I also have mild interest in Game Development. Apart from the above mentioned, I have decent knowledge in documentation, and also produce decent precentations too.</p>
-            <p class="text-justify">Recently I got interest in Electronics and Microcontroller, and hoping that I could learn more in future.</p>
-        </div>
-
-        <!-- My Skill -->
-        <div id="skills">
             
         </div>
+    </div>
 
-
+    <!-- About Me -->
+    <div id="about-me" class="container" style="background: #000000a8; color: white; padding: 30px; text-align: center;">
+        <div class="row">
+            <div class="col-md">
+                <p class="text-justify" style="font-size: 22px;">I'm a Computer Science and Engineering graduate looking for a job, having interest in computers and electronics field, As I have interest in computers, I learnt basics of several languages such as Python, JavaScript, and for Front-end development with HTML, CSS and also used Bootstrap 4, TailwindCSS too.</p>
+            </div>
+            <div class="col-md mt-2" style="font-size: 16px;">
+                <p class="text-justify">I also learned AWS and DevOps tools and done some work with these technologies, I also have mild interest in Game Development. Apart from the above mentioned, I have decent knowledge in documentation, and also produce decent precentations too.</p>
+                <p class="text-justify">Recently I got interest in Electronics and Microcontroller, and hoping that I could learn more in future.</p>
+            </div>
+        </div>
+        <button class="btn btn-info my-5" style="text-align: center;" onclick="resume()">My Resume</button>
     </div>
 
 
+    <!-- Skills Section -->
+    <div id="skills" class="container" style="padding: 30px; margin-top: 40px; color: white; text-align: center; background: #ffffffdd;">
+       <nav class="nav nav-pills justify-content-center flex-column flex-md-row" style="font-size: 16px;">
+            <a href="#cloud" class="nav-link active" data-toggle="tab">Cloud Technologies</a>
+            <a href="#programming" class="nav-link" data-toggle="tab">Programming</a>
+            <a href="#web-dev" class="nav-link" data-toggle="tab">Web Development</a>
+            <a href="#other" class="nav-link" data-toggle="tab">Other</a>
+            <a href="#soft-skills" class="nav-link" data-toggle="tab">Soft Skills</a>
+       </nav>
+       <div class="tab-content py-5" style="color: white; font-weight: 500;">
+            <div class="tab-pane active" id="cloud">
+                <ol>
+                    <li>AWS</li>
+                    <li>DevOps</li>
+                </ol>
+            </div>
+            <div class="tab-pane" id="programming">
+                <ol>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                </ol>
+            </div>
+            <div class="tab-pane" id="web-dev">
+                <ol>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React JS</li>
+                </ol>
+            </div>
+            <div class="tab-pane" id="other">
+                <ol>
+                    <li>GIMP</li>
+                    <li>Inkscape</li>
+                    <li>Krita</li>
+                    <li>Blender</li>
+                    <li>Word</li>
+                    <li>Presentation</li>
+                </ol>
+            </div>
+            <div class="tab-pane" id="soft-skills">
+                <ol>
+                    <li>Creative</li>
+                    <li>Curious Nature</li>
+                    <li>Good Listener</li>
+                </ol>
+            </div>
+       </div>
+    </div>
+
+    <!-- My Works -->
+    <div id="work" class="container mt-5" style="padding: 30px; margin-top: 40px; color: black; background: #000000a8;">
+        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="Computer-tab" data-toggle="tab" data-target="#computer" type="button" role="tab" aria-controls="computer" aria-selected="true">Projects</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link disabled" id="Electronics-tab" data-toggle="tab" data-target="#electronics" type="button" role="tab" aria-controls="electronics" aria-selected="false">Electronics</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link disabled" id="GD-tab" data-toggle="tab" data-target="#gd" type="button" role="tab" aria-controls="gd" aria-selected="false">Game Dev</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link disabled" id="Arts-tab" data-toggle="tab" data-target="#arts" type="button" role="tab" aria-controls="arts" aria-selected="false">Arts</button>
+            </li>
+        </ul>
+        
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane container active" id="computer" role="tabpanel" aria-labelledby="Computer-tab">
+                <div class="row mt-5 justify-content-center">
+                    <!-- Card Start -->
+                    <div class="card my-1 mx-1 col-md-6 col-lg-3" style="width: 18rem;">
+                        <img src="./Assets/Works/Projects/docker-jenkins.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body text-justify">
+                            <h5 class="card-title">CICD Pipeline with Jenkins</h5>
+                            <p class="card-text">Deploy a CICD pipeline for a simple Java based Web application with jenkins and Docker</p>
+                            <a href="#" class="btn btn-info">GitHub Link</a>
+                        </div>
+                    </div>              
+                    <!-- Card End -->
+                </div>
+            </div>
+            <div class="tab-pane" id="electronics" role="tabpanel" aria-labelledby="Electronics-tab">...</div>
+            <div class="tab-pane" id="gd" role="tabpanel" aria-labelledby="GD-tab">...</div>
+            <div class="tab-pane" id="arts" role="tabpanel" aria-labelledby="Arts-tab">...</div>
+        </div>
+    </div>
+
+    <!-- Test - Cards -->
+    <!-- <div class="container my-4">
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="./Assets/TimelineCovers.pro_anime-original-scenic-beach-facebook-cover.jpg" alt="" class="card-img-top img-fluid">
+                        <h3 class="card-title">Unknown</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui corporis nobis, esse asperiores deserunt error non ex corrupti, modi dolores deleniti similique porro officia at aspernatur vel totam nisi itaque.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Contact Me -->
+    <div id="contact" class="container text-center" style="margin-top: 40px; padding: 20px 0; background: #ffffffdd;">
+        <div style="margin: 0 70px;">
+            <h1 class="display-4 py-3 text-info">Contact Me</h1>
+            <p class="text-justify" style="font-size: 20px;">
+                I'm happy to connect, listen and help. Let's work together and build something awesome. Let's turn your idea to an even greater product. <a href="mailto:">Email Me</a>
+            </p>
+
+            <h2 class="mt-4 text-justify">
+                External Links
+            </h2>
+            <p class="text-justify" style="font-size: 28px;">
+                <a href="">LinkedIn</a> | <a href="">GitHub</a>
+            </p>
+        </div>
+    </div>
+
+    <footer class="container" style="background-color: black; padding: 20px 0; color: white; margin: 40px auto;">
+        <div style="margin: 0 90px;">&copy; Copyrights Ganesh, and image provider</div>
+    </footer>
+        
     <!-- Custom JavaScript -->
     <script src="index.js"></script>
+    <script src="text.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
